@@ -12,7 +12,7 @@
 
 <nav class="fixed top-0 left-0 z-20 w-full border-b border-gray-200 bg-white py-2.5 px-6 sm:px-4">
     <div class="container mx-auto flex max-w-6xl flex-wrap items-center justify-between">
-        <a href="index.php" class="flex items-center">
+        <a href="/" class="flex items-center">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="mr-3 h-6 text-blue-500 sm:h-9">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -23,10 +23,10 @@
         <div class="mt-2 sm:mt-0 sm:flex md:order-2 flex items-center gap-5 p-1">
             <!--
 
-                <?php// if (isset($_SESSION['usuario'])): ?> ?> ?> ?>
+                <?php// if (isset($_SESSION['usuario'])): ?> ?> ?> ?> ?>
 
                 <span class="text-sm font-medium text-blue-700">
-                    Bienvenido, <?php// echo htmlspecialchars($_SESSION['usuario']); ?> ?> ?> ?>
+                    Bienvenido, <?php// echo htmlspecialchars($_SESSION['usuario']); ?> ?> ?> ?> ?>
                 </span>
                 <form action="" method="POST">
                     <button type="submit" name="logout"

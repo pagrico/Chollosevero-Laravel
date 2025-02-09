@@ -3,14 +3,16 @@
 <div class="pt-32 bg-white text-center mb-10">
     <h1 class="text-2xl font-bold text-gray-800">Todos los Chollos</h1>
 
-    <a href="newOferta.php"
+    <!-- Botón solo visible para usuarios (id_usuario = 1) -->
+
+    <a href="/inicio/formchollo"
         class="mt-6 inline-block px-8 py-4 bg-blue-500 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all duration-300 transform hover:scale-105">
         Añadir Chollo
     </a>
 
 
     <!-- Botón solo visible para el administrador (id_usuario = 1) -->
-    <a href="admin.php"
+    <a href="inicio/admin"
         class="mt-6 ml-4 inline-block px-8 py-4 bg-red-500 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-red-600 focus:outline-none focus:ring-4 focus:ring-red-300 transition-all duration-300 transform hover:scale-105">
         Panel Admin
     </a>
@@ -24,7 +26,7 @@
         @foreach ($chollo as $item)
             <article
                 class="relative rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300">
-                <a href="producto.php?id={{ $item->titulo_chollo }}">
+                <a href="/inicio/chollo/{{ $item->id }}">
                     <div class="relative flex items-end overflow-hidden rounded-xl">
                         <img src="<{{ $item->imagen_chollo }}" alt="{{ $item->titulo_chollo }}"
                             class="w-full h-48 object-cover rounded-xl" />
